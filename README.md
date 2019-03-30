@@ -11,4 +11,4 @@ scrapy crawler wallpaper #启动爬虫
 
 图片存放在download/
 
-![image](https://github.com/Dingdingf/wallpaper/download/152365.jpg)
+![image](https://github.com/Dingdingf/wallpaper/blob/master/download/152365.jpg)
