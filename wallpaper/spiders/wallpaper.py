@@ -11,8 +11,8 @@ class WallpaperSpider(Spider):
     name = 'wallpaper'
     start_urls = 'https://alpha.wallhaven.cc/search?q=4k&categories=000&purity=100&atleast=3840x2160&sorting=relevance&order=desc&page=2'
     def start_requests(self):
-        for i in range(3):
-            start_urls = 'https://alpha.wallhaven.cc/search?q=4k&categories=000&purity=100&atleast=3840x2160&sorting=relevance&order=desc&page=%d'% (i+1)
+        for i in range(10):
+            start_urls = 'https://alpha.wallhaven.cc/random?page=%d'% (i+1)
 
             yield FormRequest(start_urls,callback=self.get_image)
 
